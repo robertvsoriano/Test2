@@ -1,0 +1,19 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>Aplicaciín Quickstar de ZF</title>
+        <?php echo $this->headLink()->appendStylesheet('/css/global.css')?>
+    </head>
+    <body>
+        <div id="header" style="background-color: #EEEEEE; heigh: 30px;">
+            <div id="header-logo" style="float: left">
+                <b>Aplicación ZF</b>
+            </div>
+            <div id="header-navigation" style="float: rigth">
+                <a href="<?php echo $this->url(array('controller'=>'guestbook'),'default',true)?>"> Guestbook (DB)</a>
+            </div>
+        </div>
+    <?php echo $this->layout()->content ?>
+    </body>
+</html>
